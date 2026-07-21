@@ -395,10 +395,10 @@
   }
   .squad-number{
     position:absolute;
-    top:-30px; left:-10px;
+    top:-10px; left:-10px;
     font-family: var(--font-display);
-    font-size:220px;
-    color: rgba(239,233,220,0.08);
+    font-size:120px;
+    color: rgba(0, 0, 0, 0.08);
     line-height:1;
     -webkit-text-stroke: 1px rgba(239,233,220,0.15);
   }
@@ -664,8 +664,8 @@
 <section class="main">
   <div class="wrap main-inner">
     <p class="founding">Est. 2014 &mdash; Home ground: Eyemote CHS Pitch</p>
-    <h1>We are<br><span>Belatores</span></h1>
-    <p>Latin for warriors. Built on a dirt pitch, sharpened under stadium lights &mdash; Belatores FC plays for the badge, the block, and everyone who's ever chased a ball at sunset.</p>
+    <h1>We are<br><span>Bellatores</span></h1>
+    <p>Latin for warriors. Built on a dirt pitch, sharpened under stadium lights &mdash; Bellatores SC plays for the badge, the block, and everyone who's ever chased a ball at sunset.</p>
     <div class="bellatores-actions">
       <a href="#fixtures" class="btn btn-primary">See fixtures</a>
       <a href="#join" class="btn btn-ghost">Join the club</a>
@@ -685,7 +685,7 @@
     <div class="club-copy">
       <div class="eyebrow">The club</div>
       <h2 style="font-size:clamp(30px,4vw,44px); margin-bottom:22px;">Every warrior started<br>on borrowed ground.</h2>
-      <p>Bellatores FC began as a Sunday kickabout on a dirt lot with tyre-lined goalposts. No changing rooms, no floodlights &mdash; just a ball, a chalk line, and eleven people who refused to stop showing up.</p>
+      <p>Bellatores SC began as a Sunday kickabout on a dirt lot with tyre-lined goalposts. No changing rooms, no floodlights &mdash; just a ball, a chalk line, and eleven people who refused to stop showing up.</p>
       <p>A decade on, we've traded the dirt for turf, but the standard hasn't moved: play for who's next to you, earn the shirt every week, and never let the badge down.</p>
       <div class="club-stats">
         <div>
@@ -724,14 +724,14 @@
         <img src="img-icon/IMG-20260717-WA0106.jpg" alt="Bellatores defender wearing the club's away kit, smiling before kickoff" loading="lazy">
       </div>
       <div class="squad-copy">
-        <div class="eyebrow">Player of the month</div>
+        <div class="eyebrow">Player of the month(June)</div>
         <h3>Owolabi Muritala</h3>
         <p>Defender. Joined Bellatores at fourteen from the youth pitch two streets over &mdash; now our leading scorer for the third season running.</p>
         <p>"This badge means more when you remember where it came from. Every match, we play for the ones still out there on the dirt."</p>
         <div class="squad-tags">
           <span>No. 16 &middot; Defender</span>
           <span>14 clean sheets this season</span>
-          <span>Presented by Bellatores FC Team Manager(TM), 2025&ndash;26</span>
+          <span>Presented by Bellatores SC Team Manager(TM), 2025&ndash;26</span>
         </div>
       </div>
     </div>
@@ -765,9 +765,9 @@
 <section class="section" id="join">
   <div class="wrap join">
     <div class="join-copy reveal">
-      <div class="eyebrow">Join Belatores</div>
+      <div class="eyebrow">Join Bellatores</div>
       <h2>Wear the badge.<br>Earn the shirt.</h2>
-      <p>Trials run every first Saturday of the month at Ferrum Park. All positions, all levels &mdash; we'll place you where you fit.</p>
+      <p>Trials run every first Saturday of the month at Eyemote CHS Pitch. All positions, all levels &mdash; we'll place you where you fit.</p>
       <ul class="join-list">
         <li><b>01</b> Fill in the form and tell us your position.</li>
         <li><b>02</b> We'll reply within three days with a trial slot.</li>
@@ -781,7 +781,7 @@
       </div>
       <div class="field">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@email.com" required>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
       </div>
       <div class="field">
         <label for="position">Preferred position</label>
@@ -881,7 +881,7 @@
     card.className = 'ticket';
     card.innerHTML = `
       <span class="ticket-status ${f.home ? '' : 'away'}">${f.status}</span>
-      <h3>${f.home ? 'Belatores FC' : f.opponent}<br>vs ${f.home ? f.opponent : 'Belatores FC'}</h3>
+      <h3>${f.home ? 'Bellatores SC' : f.opponent}<br>vs ${f.home ? f.opponent : 'Bellatores SC'}</h3>
       <div class="ticket-meta">
         <span>${f.date} &middot; ${f.venue}</span>
         <span>${f.score ? f.score : (f.home ? 'Home fixture' : 'Away fixture')}</span>
@@ -892,7 +892,7 @@
 
   const track = document.getElementById('tickerTrack');
   const tickerItems = fixtures.map(f => {
-    const label = f.home ? `BFC vs ${f.opponent}` : `${f.opponent} vs BFC`;
+    const label = f.home ? `BTSC vs ${f.opponent}` : `${f.opponent} vs BTSC`;
     const right = f.score ? `<span class="score">${f.score}</span>` : `<span>${f.date}</span>`;
     return `<div class="ticker-item"><b>${label}</b>${right}</div>`;
   }).join('');
